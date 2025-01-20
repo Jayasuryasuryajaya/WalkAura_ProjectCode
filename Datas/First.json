@@ -1,0 +1,1371 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Classic Black Sneakers",
+      "brand": "Converse",
+      "price": 4980,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "These sneakers fit perfectly and go well with any outfit. Highly recommended!",
+      "description": "Comfortable and stylish classic black sneakers with white soles, perfect for casual wear.",
+      "images": "./Photos/image1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "White Mesh Running Shoes",
+      "brand": "Adidas",
+      "price": 7055,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Super lightweight and comfortable. Great for running and workouts!",
+      "description": "Breathable white running shoes with cushioned soles for ultimate comfort and performance.",
+      "images": "./Photos/image2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Beige Sports Sneakers",
+      "brand": "Skechers",
+      "price": 7885,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "These sneakers are very comfortable and look great. Worth the price!",
+      "description": "Stylish beige sneakers designed for both sports and casual wear with premium material.",
+      "images": "./Photos/image3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "High-Top Black Skate Shoes",
+      "brand": "Skechers SB",
+      "price": 9130,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "ratings": "Great shoes for skating, very supportive and durable. Love the design!",
+      "description": "High-top black skate shoes with added ankle support and a durable design for skaters.",
+      "images": "./Photos/image4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Limited Edition Sneakers with Gold Chains",
+      "brand": "Balenciaga",
+      "price": 20750,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "A unique pair that stands out! Worth every penny for sneaker collectors.",
+      "description": "Limited edition sneakers featuring gold chain accents, combining luxury with a bold design.",
+      "images": "./Photos/image5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Retro White and Yellow High-Tops",
+      "brand": "Puma",
+      "price": 6225,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "They look amazing and feel very comfortable for long walks.",
+      "description": "Retro-inspired white and yellow high-tops with a nostalgic design and modern comfort.",
+      "images": "./Photos/image6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Blue and White Basketball Shoes",
+      "brand": "Air Jordan",
+      "price": 10790,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "ratings": "These shoes are perfect for basketball. Great grip and look fantastic on the court.",
+      "description": "Performance basketball shoes with a bold blue and white design, offering excellent grip and support.",
+      "images": "./Photos/image7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Tan Casual Canvas Shoes",
+      "brand": "Vans",
+      "price": 4565,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "Very lightweight and comfortable. Goes well with jeans and shorts.",
+      "description": "Casual tan canvas shoes with a minimalistic design, ideal for everyday use.",
+      "images": "./Photos/image8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Gray Lightweight Trail Runners",
+      "brand": "Salomon",
+      "price": 8320,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Great grip on rugged terrain and very lightweight. Perfect for hiking enthusiasts!",
+      "description": "Durable and lightweight gray trail runners, perfect for outdoor adventures.",
+      "images": "./Photos/image9.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Red and Black Tennis Shoes",
+      "brand": "Asics",
+      "price": 5670,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "Perfect for tennis. Excellent grip and cushioning during matches.",
+      "description": "High-performance red and black tennis shoes designed for superior agility and comfort.",
+      "images": "./Photos/image10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Olive Green Hiking Boots",
+      "brand": "Timberland",
+      "price": 12450,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "ratings": "Perfect for trekking. Very sturdy and stylish!",
+      "description": "Rugged olive green hiking boots built for durability and comfort in extreme conditions.",
+      "images": "./Photos/image11.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Black and Orange Training Shoes",
+      "brand": "Reebok",
+      "price": 6900,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Provides excellent support and feels great during intense workouts.",
+      "description": "Dynamic black and orange training shoes designed for gym workouts and cross-training.",
+      "images": "./Photos/image12.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Navy Blue Slip-On Sneakers",
+      "brand": "Skechers",
+      "price": 5150,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "Very comfortable for casual outings. Easy to slip on and off.",
+      "description": "Comfortable navy blue slip-on sneakers with memory foam insoles.",
+      "images": "./Photos/image13.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Silver Metallic Running Shoes",
+      "brand": "New Balance",
+      "price": 9800,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "These shoes look fantastic and feel very responsive during runs.",
+      "description": "Modern silver metallic running shoes for enhanced speed and comfort.",
+      "images": "./Photos/image14.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Purple and Pink Marathon Shoes",
+      "brand": "Brooks",
+      "price": 11200,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Extremely comfortable for long runs. Highly recommend for marathoners!",
+      "description": "Ergonomic purple and pink marathon shoes designed for long-distance comfort.",
+      "images": "./Photos/image15.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Brown Leather Loafers",
+      "brand": "Clarks",
+      "price": 7350,
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Looks very classy and feels comfortable for all-day wear.",
+      "description": "Premium brown leather loafers suitable for both casual and semi-formal occasions.",
+      "images": "./Photos/image16.png"
+    },
+    {
+      "id": "17",
+      "name": "Black Waterproof Combat Boots",
+      "brand": "Dr. Martens",
+      "price": 15500,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "ratings": "Great for tough environments. Looks stylish and is extremely comfortable.",
+      "description": "Durable and stylish waterproof combat boots, ideal for rugged conditions.",
+      "images": "./Photos/image17.png"
+    },
+    {
+      "id": "18",
+      "name": "Yellow Canvas Espadrilles",
+      "brand": "Toms",
+      "price": 3990,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Perfect for sunny days! Very comfortable and easy to wear.",
+      "description": "Lightweight and colorful yellow canvas espadrilles, perfect for summer.",
+      "images": "./Photos/image20.png"
+    },
+    {
+      "id": "19",
+      "name": "Black and Gray Snow Boots",
+      "brand": "North Face",
+      "price": 12890,
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": "Kept my feet warm during heavy snow. Great quality and comfort.",
+      "description": "Insulated snow boots for ultimate warmth and grip in cold conditions.",
+      "images": "./Photos/image19.png"
+    },
+    {
+      "id": "20",
+      "name": " Lightweight Hiking Shoes",
+      "brand": "Merrell",
+      "price": 8670,
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "ratings": "Excellent grip and comfort for hikes. Stylish and functional.",
+      "description": "Lightweight red hiking shoes with advanced cushioning for long treks.",
+      "images": "./Photos/image18.png"
+    }
+  ],
+  "Skechers": [
+    {
+      "id": 1,
+      "name": "Skechers Go Run 600",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 6000,
+      "ratings": 4.2,
+      "description": "Lightweight and breathable for comfortable runs.",
+      "images": "./Skechers/S1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SkechersD'Lites",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 4500,
+      "ratings": 4.5,
+      "description": "Classic chunky sneaker with a retro vibe.",
+      "images": "./Skechers/S2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Skechers Go Walk 5",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 7500,
+      "ratings": 4.8,
+      "description": "Ultra-lightweight and flexible for all-day comfort.",
+      "images": "./Skechers/S3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Skechers Energy Afterburn",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 5500,
+      "ratings": 4,
+      "description": "Responsive cushioning for dynamic performance.",
+      "images": "./Skechers/S4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Skechers   Go Walk 4",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 6800,
+      "ratings": 4.7,
+      "description": "Comfortable and stylish for everyday wear.",
+      "images": "./Skechers/S5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Skechers   Uno Stand On Air",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 8000,
+      "ratings": 4.3,
+      "description": "Maximal cushioning for a plush feel.",
+      "images": "./Skechers/S6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Skechers   Bobs Squad",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 3500,
+      "ratings": 4.1,
+      "description": "Casual and comfortable for everyday wear.",
+      "images": "./Skechers/S7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Skechers   Go Run Forza",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 7000,
+      "ratings": 4.6,
+      "description": "Lightweight and responsive for fast runs.",
+      "images": "./Skechers/S8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Skechers   Air Max 90",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 8000,
+      "ratings": 4.5,
+      "description": "Iconic Air Max 90 with visible Air unit.",
+      "images": "./Skechers/S9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Adidas Superstar",
+      "brand": "Adidas",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 7500,
+      "ratings": 4.8,
+      "description": "Classic shell-toe for a retro look.",
+      "images": "./Skechers/S10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Skechers   Air Force 1",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.2,
+      "description": "Timeless sneaker for any occasion.",
+      "images": "./Skechers/S11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Skechers   Air Max 270",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 12000,
+      "ratings": 4.7,
+      "description": "Bold and stylish with a large Air unit.",
+      "images": "./Skechers/S2.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Converse Chuck Taylor All Stars",
+      "brand": "Converse",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 5000,
+      "ratings": 4.9,
+      "description": "Classic canvas sneakers for a casual look.",
+      "images": "./Skechers/S3.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Adidas Yeezy Boost 350",
+      "brand": "Adidas",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 20000,
+      "ratings": 4.4,
+      "description": "Innovative and stylish with Boost cushioning.",
+      "images": "./Skechers/S4.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Vans Old Skool",
+      "brand": "Vans",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 4000,
+      "ratings": 4.6,
+      "description": "Iconic side stripe and timeless design.",
+      "images": "./Skechers/S15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Skechers   Air Jordan 1",
+      "brand": "Skechers  ",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 15000,
+      "ratings": 4.8,
+      "description": "Basketball legend in a classic silhouette.",
+      "images": "./Skechers/S16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Adidas Stan Smith",
+      "brand": "Adidas",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 6000,
+      "ratings": 4.3,
+      "description": "Minimalist and clean for a classic look.",
+      "images": "./Skechers/S17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Puma Suede",
+      "brand": "Puma",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 5500,
+      "ratings": 4.1,
+      "description": "Retro suede upper for a timeless style.",
+      "images": "./Skechers/S18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Converse Chuck 70",
+      "brand": "Converse",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 6500,
+      "ratings": 4.7,
+      "description": "Premium version of the classic Chuck Taylor.",
+      "images": "./Skechers/S19.jpg"
+    }
+  ],
+  "Nike": [
+    {
+      "id": 1,
+      "name": "Air Jordan 1 Mid",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 12000,
+      "ratings": 4.5,
+      "description": "The classic Air Jordan 1 Mid in a fresh colorway.",
+      "images": "./Nike/N1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Air Max 90",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 8000,
+      "ratings": 4.8,
+      "description": "The iconic Air Max 90 with a visible Air unit.",
+      "images": "./Nike/N2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nike Blazer Mid '77 Vintage",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 9000,
+      "ratings": 4.2,
+      "description": "A classic basketball shoe with a vintage look.",
+      "images": "./Nike/N3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.7,
+      "description": "The iconic Air Force 1, a timeless sneaker.",
+      "images": "./Nike/N4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Nike Dunk Low",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 7000,
+      "ratings": 4.9,
+      "description": "The classic Dunk Low in a variety of colors.",
+      "images": "./Nike/N5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Nike React Element 55",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 11000,
+      "ratings": 4.4,
+      "description": "A modern sneaker with a futuristic design.",
+      "images": "./Nike/N6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Nike Air Max 270 React",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 13000,
+      "ratings": 4.6,
+      "description": "Comfortable and stylish with a large Air Max unit.",
+      "images": "./Nike/N7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Nike Air Max 97",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.8,
+      "description": "The iconic Air Max 97 with its wavy design.",
+      "images": "./Nike/N8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Nike Blazer Mid '77 Vintage",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 9000,
+      "ratings": 4.2,
+      "description": "A classic basketball shoe with a vintage look.",
+      "images": "./Nike/N8.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.7,
+      "description": "The iconic Air Force 1, a timeless sneaker.",
+      "images": "./Nike/N10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Nike Air Max 90",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 8000,
+      "ratings": 4.5,
+      "description": "Iconic Air Max 90 with visible Air unit.",
+      "images": "./Nike/N11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Nike SB Dunk Low",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.8,
+      "description": "Skateboarding-inspired with a bold colorway.",
+      "images": "./Nike/N12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.2,
+      "description": "Timeless sneaker for any occasion.",
+      "images": "./Nike/N13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Nike Air Max 270",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 12000,
+      "ratings": 4.7,
+      "description": "Bold and stylish with a large Air unit.",
+      "images": "./Nike/N14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Nike React Element 55",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 11000,
+      "ratings": 4.9,
+      "description": "Futuristic design with React foam.",
+      "images": "./Nike/N15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Nike Air Max 97",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10000,
+      "ratings": 4.4,
+      "description": "Iconic wavy design with full-length Air.",
+      "images": "./Nike/N16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Nike Air Jordan 1 Mid",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 12000,
+      "ratings": 4.6,
+      "description": "Mid-top classic in a fresh colorway.",
+      "images": "./Nike/N17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Nike Air Max 95",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 9000,
+      "ratings": 4.8,
+      "description": "Rippled design with gradient colors.",
+      "images": "./Nike/N18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Vans Old Skool",
+      "brand": "Vans",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 4500,
+      "ratings": 4.6,
+      "description": "Iconic side stripe and timeless design.",
+      "images": "./Nike/N19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Nike Air Max 97",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 9500,
+      "ratings": 4.4,
+      "description": "Wavy design with full-length Air unit.",
+      "images": "./Nike/N20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 10500,
+      "ratings": 4.9,
+      "description": "Classic and timeless for any occasion.",
+      "images": "./Nike/N21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Nike Army",
+      "brand": "Nikes",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "price": 1550,
+      "ratings": 5,
+      "description": "Red soil mixed wonderfull for walking and also adventures.",
+      "images": "./Nike/N22.png"
+    }
+  ],
+  "Adidas": [
+    {
+      "id": "1",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5000,
+      "ratings": "4.5 stars",
+      "description": "A stylish Adidas shoe with a sleek design. Perfect for casual wear.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A1.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 6000,
+      "ratings": "4.7 stars",
+      "description": "A comfortable and durable Adidas shoe. Ideal for sports and outdoor activities.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "../Adidas/A3.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5500,
+      "ratings": "4.6 stars",
+      "description": "A trendy Adidas shoe with a modern look. Suitable for everyday use.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5200,
+      "ratings": "4.4 stars",
+      "description": "A versatile Adidas shoe with excellent grip. Great for running and training.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5800,
+      "ratings": "4.8 stars",
+      "description": "A lightweight Adidas shoe with superior comfort. Perfect for long walks.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5300,
+      "ratings": "4.5 stars",
+      "description": "A classic Adidas shoe with a timeless design. Suitable for all occasions.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5700,
+      "ratings": "4.7 stars",
+      "description": "A high-performance Adidas shoe with advanced features. Ideal for athletes.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A9.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5400,
+      "ratings": "4.6 stars",
+      "description": "A durable Adidas shoe with excellent support. Great for everyday activities.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5600,
+      "ratings": "4.5 stars",
+      "description": "A vibrant Adidas shoe with a bold design. Perfect for making a statement.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A11.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5900,
+      "ratings": "4.8 stars",
+      "description": "A premium Adidas shoe with top-notch materials. Ideal for luxury wear.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A12.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5100,
+      "ratings": "4.4 stars",
+      "description": "A sporty Adidas shoe with a comfortable fit. Great for active lifestyles.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A13.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5500,
+      "ratings": "4.6 stars",
+      "description": "A rugged Adidas shoe with excellent durability. Perfect for outdoor adventures.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A14.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5300,
+      "ratings": "4.5 stars",
+      "description": "A sleek Adidas shoe with a modern design. Suitable for casual and formal wear.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A15.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Adidas Shoe",
+      "brand": "Adidas",
+      "price": 5200,
+      "ratings": "4.4 stars",
+      "description": "A high-quality Adidas shoe with excellent breathability. Perfect for warm weather.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "./Adidas/A16.jpg"
+    }
+  ],
+  "Puma": [
+    {
+      "id": "1",
+      "name": "Puma Running Shoe",
+      "brand": "Puma",
+      "price": 4500,
+      "ratings": "4.5 stars",
+      "description": "A sleek and stylish Puma running shoe. Perfect for casual and athletic use.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I1.png"
+    },
+    {
+      "id": "2",
+      "name": "Puma Sports Shoe",
+      "brand": "Puma",
+      "price": 5000,
+      "ratings": "4.7 stars",
+      "description": "A durable and comfortable Puma sports shoe. Ideal for outdoor activities.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I2.png"
+    },
+    {
+      "id": "3",
+      "name": "Puma Casual Shoe",
+      "brand": "Puma",
+      "price": 4000,
+      "ratings": "4.6 stars",
+      "description": "A trendy Puma casual shoe with a modern look. Suitable for everyday wear.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I3.png"
+    },
+    {
+      "id": "4",
+      "name": "Puma Training Shoe",
+      "brand": "Puma",
+      "price": 5200,
+      "ratings": "4.4 stars",
+      "description": "A versatile Puma training shoe with excellent grip. Great for workouts and training.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I4.png"
+    },
+    {
+      "id": "5",
+      "name": "Puma Walking Shoe",
+      "brand": "Puma",
+      "price": 4800,
+      "ratings": "4.8 stars",
+      "description": "A lightweight Puma walking shoe with superior comfort. Perfect for long walks.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I5.png"
+    },
+    {
+      "id": "6",
+      "name": "Puma High-Performance Shoe",
+      "brand": "Puma",
+      "price": 5500,
+      "ratings": "4.5 stars",
+      "description": "A high-performance Puma shoe with advanced features. Ideal for athletes.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I6.png"
+    },
+    {
+      "id": "7",
+      "name": "Puma Adventure Shoe",
+      "brand": "Puma",
+      "price": 5300,
+      "ratings": "4.6 stars",
+      "description": "A durable Puma shoe with excellent support. Great for adventurous activities.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I7.png"
+    },
+    {
+      "id": "8",
+      "name": "Puma Lifestyle Shoe",
+      "brand": "Puma",
+      "price": 5000,
+      "ratings": "4.5 stars",
+      "description": "A vibrant Puma shoe with a bold design. Perfect for making a statement.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I8.png"
+    },
+    {
+      "id": "9",
+      "name": "Puma Luxury Shoe",
+      "brand": "Puma",
+      "price": 6000,
+      "ratings": "4.8 stars",
+      "description": "A premium Puma shoe with top-notch materials. Ideal for luxury wear.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I9.png"
+    },
+    {
+      "id": "10",
+      "name": "Puma Sporty Shoe",
+      "brand": "Puma",
+      "price": 4700,
+      "ratings": "4.4 stars",
+      "description": "A sporty Puma shoe with a comfortable fit. Great for active lifestyles.",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": "/Puma/I10.png"
+    }
+  ],
+  "Carts": [],
+  "CustomerInfo": [],
+  "MyOrders": [],
+  "CreateUserData": []
+}
