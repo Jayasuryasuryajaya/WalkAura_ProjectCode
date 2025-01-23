@@ -29,15 +29,15 @@ const CustomerInfos = () => {
         setState(true)
       }, 2500)
       console.log(data)
-      try{
-        axios.post('http://localhost:3500/CustomerInfo',data,{
-          header:{
-            "content-type":"application/json"
-          }
-        })
-      }catch(err){
-        console.log(err)
-      }
+      // try{
+      //   axios.post('http://localhost:3500/CustomerInfo',data,{
+      //     header:{
+      //       "content-type":"application/json"
+      //     }
+      //   })
+      // }catch(err){
+      //   console.log(err)
+      // }
     }
   })
 

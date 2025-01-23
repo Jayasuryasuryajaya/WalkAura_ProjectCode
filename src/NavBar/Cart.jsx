@@ -13,9 +13,11 @@ const Cart = ({cart}) => {
  useEffect(()=>{
   const GetCartDatas=async()=>{
     try{
-          const request= await axios.get('http://localhost:3500/Carts')
-          const res=await request.data
+          const request= await axios.get('https://fast-silver-cow.glitch.me/First.json')
+          const res=await request.data.Carts
           setCartData(res)
+          console.log(res)
+
     }catch(err){
       console.log(err)
     }
@@ -116,7 +118,7 @@ const Cart = ({cart}) => {
                     <button className="btn btn-outline-dark" onClick={() => { RemoveItems(cartDatas.id) }}>
                       Remove Item
                     </button>
-                    {/*  */}
+                  
                     <button className=' btn btn-outline-dark rounded '  onClick={()=>{TobuyPage(cartDatas,index)}}>Buy now<span className='bi bi-bag-check-fill ms-1'></span></button>
                   </div>
                 </div>

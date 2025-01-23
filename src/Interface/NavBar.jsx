@@ -16,7 +16,13 @@ const Navigation = ({ cart, GetFromChild, Price }) => {
   };
 
   const CaptureType = (e) => {
-    GetFromChild(e.target.value);
+    const trimedval=e.target.value.trim()
+    if(trimedval==''){
+      return
+    }else{
+
+      GetFromChild(trimedval);
+    }
     console.log(e.target.value);
   };
 
@@ -35,29 +41,29 @@ const Navigation = ({ cart, GetFromChild, Price }) => {
     }
   }, []);
 
-  setTimeout(() => {
-    const DeleteDatas = async () => {
-      const api = [
-        'http://localhost:3500/Carts',
-        'http://localhost:3500/CustomerInfo',
-        'http://localhost:3500/MyOrders',
-        'http://localhost:3500/CreateUserData',
-      ];
-      try {
-        for (const endpoint of api) {
-          const { data } = await axios.get(endpoint);
-          if (data.length > 0) {
-            for (const item of data) {
-              await axios.delete(`${endpoint}/${item.id}`);
-            }
-          }
-        }
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    DeleteDatas();
-  }, 5 * 60 * 1000);
+  // setTimeout(() => {
+  //   const DeleteDatas = async () => {
+  //     const api = [
+  //       'http://localhost:3500/Carts',
+  //       'http://localhost:3500/CustomerInfo',
+  //       'http://localhost:3500/MyOrders',
+  //       'http://localhost:3500/CreateUserData',
+  //     ];
+  //     try {
+  //       for (const endpoint of api) {
+  //         const { data } = await axios.get(endpoint);
+  //         if (data.length > 0) {
+  //           for (const item of data) {
+  //             await axios.delete(`${endpoint}/${item.id}`);
+  //           }
+  //         }
+  //       }
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   DeleteDatas();
+  // }, 5 * 60 * 1000);
 
   const RemovePoups = () => {
     setDisplayPoup(false);
@@ -65,7 +71,7 @@ const Navigation = ({ cart, GetFromChild, Price }) => {
 
   return (
     <div>
-      <nav className="navbar bg-dark navbar-dark navbar-expand-lg sticky-top z-index-5">
+      <nav className="navbar bg-dark navbar-dark navbar-expand-xl sticky-top z-index-5">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img

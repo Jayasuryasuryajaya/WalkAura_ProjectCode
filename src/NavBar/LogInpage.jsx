@@ -7,19 +7,19 @@ import * as Yup from 'yup';
 import { LoginSocialGoogle } from 'reactjs-social-login'
 import { useFormik } from 'formik';
 import { toast } from 'react-toastify';
-import axios from 'axios';
+// import axios from 'axios';
 
 const LogInpage = () => {
   const navigate = useNavigate()
   const [ValidateNumber,setValidateNumber]=useState('')
     const getLoginData=async ()=>{
-      try{
-        const GetAlready=await axios.get('http://localhost:3500/CreateUserData')
-        const datas=await GetAlready.data;
-        setValidateNumber(datas[0].number)
-      }catch(e){
-       setValidateNumber(undefined)
-      }
+      // try{
+      //   const GetAlready=await axios.get('http://localhost:3500/CreateUserData')
+      //   const datas=await GetAlready.data;
+      //   setValidateNumber(datas[0].number)
+      // }catch(e){
+      //  setValidateNumber(undefined)
+      // }
     }
     getLoginData()
 

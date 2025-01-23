@@ -2,18 +2,22 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './NavBar.jsx';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 const Home = ({ cart, Navigating }) => {
   const navigate = useNavigate();
-  const [SelectShoeType, setSelectShoeType] = useState('products');
+  const [SelectShoeType, setSelectShoeType] = useState('products'); 
   const [ArrayFormate, setArrayFormate] = useState([]);
   const [SelectPrice, setSelectPrice] = useState('');
 
   const GetFromChild = (data) => {
     setSelectShoeType(data);
   };
+
   const Price = (price) => {
     setSelectPrice(price);
   };
+
   const sortProducts = (products, sortType) => {
     if (sortType === 'High-to-Low') {
       return products.sort((a, b) => b.price - a.price);
@@ -26,9 +30,8 @@ const Home = ({ cart, Navigating }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const receive = await fetch(`http://localhost:3500/${SelectShoeType}`);
-        const response = await receive.json();
-        const sortedData = sortProducts(response, SelectPrice);
+        const response = await axios.get('https://fast-silver-cow.glitch.me/First.json');
+                const sortedData = sortProducts(response.data[SelectShoeType], SelectPrice);
         setArrayFormate(sortedData);
       } catch (err) {
         console.error('Error fetching products:', err);
@@ -36,7 +39,6 @@ const Home = ({ cart, Navigating }) => {
     };
     fetchData();
   }, [SelectShoeType, SelectPrice]);
-
   const Verification = (product) => {
     navigate('/ProductDescription', { state: { product } });
   };

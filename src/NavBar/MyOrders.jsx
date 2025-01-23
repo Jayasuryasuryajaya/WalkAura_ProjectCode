@@ -6,33 +6,32 @@ const MyOrders = ({cart}) => {
   const [Orders, setOrders] = useState([]);
   const [HandleCancle, setHandleCancel] = useState([]);
 
-  useEffect(() => {
-    const GetMyOrders = async () => {
-      try {
-        const MyOrders = await axios.get('http://localhost:3500/MyOrders');
-        setOrders(MyOrders.data);
-        setHandleCancel(MyOrders.data.map(() => true));
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    GetMyOrders();
-  }, []);
+  // useEffect(() => {
+  //   const GetMyOrders = async () => {
+  //     try {
+  //       const MyOrders = await axios.get('http://localhost:3500/MyOrders');
+  //       setOrders(MyOrders.data);
+  //       setHandleCancel(MyOrders.data.map(() => true));
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   GetMyOrders();
+  // }, []);
 
-  const CalcelOrder = (id) => {
-    try{
-      axios.delete(`http://localhost:3500/MyOrders/${id}`)
-      const getFilterData=Orders.filter((curr)=>{curr.id !== id})
-      setHandleCancel((prevState) =>
-        prevState.map((_,i) => ( Orders[i].id !== id)))
-      Orders(getFilterData)
-    }catch(err){
-      console.log(err)
-    }
-    console.log(HandleCancle)
+  // const CalcelOrder = (id) => {
+  //   try{
+  //     axios.delete(`http://localhost:3500/MyOrders/${id}`)
+  //     const getFilterData=Orders.filter((curr)=>{curr.id !== id})
+  //     setHandleCancel((prevState) =>
+  //       prevState.map((_,i) => ( Orders[i].id !== id)))
+  //     Orders(getFilterData)
+  //   }catch(err){
+  //     console.log(err)
+  //   }
+  //   console.log(HandleCancle)
    
-    console.log()
-  };
+  // };
 
   return (
     <>

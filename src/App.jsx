@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,32 +21,30 @@ const App = () => {
   useEffect(() => {
     const fetchCartData = async () => {
       try {
-        const response = await axios.get('http://localhost:3500/Carts');
-        setIsCart(response.data);
+        const response = await axios.get('https://fast-silver-cow.glitch.me/First.json');
+        setIsCart(response.data.Carts || []); 
+        // console.log(response) idhu vela seiyidhu
       } catch (err) {
         console.error('Error fetching cart data:', err);
       }
     };
     fetchCartData();
   }, []);
-
   const Navigating = async (product) => {
+    console.log(product)
     const isExist = IsCarts.some((prod) => prod.id === product.id);
-
     if (!isExist) {
+      setIsCart([...IsCarts, product]);
       try {
-        const response = await axios.post('http://localhost:3500/Carts', product, {
-          headers: {
-            'Content-Type': 'application/json',
-          },
+        const response = await axios.post('https://fast-silver-cow.glitch.me/First.json', {
+          Carts: IsCarts,
         });
-        setIsCart([...IsCarts, response.data]);
-        toast.dark('Product Successfully Added to Cart!', { position: 'top-right', pauseOnHover: true });
+        console.log(response.data);
       } catch (err) {
         console.error('Error adding product to cart:', err);
       }
     } else {
-      toast.dark('Product Already in your Cart!', { position: 'top-right', pauseOnHover: true });
+      console.log('Product is already in the cart.');
     }
   };
 

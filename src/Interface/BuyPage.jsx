@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import NavBar from './NavBar.jsx';
 
-const BuyPage = ({cart}) => {
+const BuyPage = ({ cart }) => {
   const location = useLocation();
   const [Selected, setSelected] = useState('');
   const [SizeErr, setSizeErr] = useState('');
@@ -18,68 +18,70 @@ const BuyPage = ({cart}) => {
   const sizes = selectedSize || Selected;
   const Count = prodCount;
   const navigate = useNavigate();
+  // useEffect(() => {
+  //   const getDataOrders = async () => {
+  //     try {
+  //       const { data: responseData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
+  //       setAlreadyOrdered(responseData.Carts || []);
+  //     } catch (err) {
+  //       console.error('Error fetching orders:', err);
+  //     }
+  //   };
+  //   getDataOrders();
+  // }, []);
+  // useEffect(() => {
+  //   const getAddressVerify = async () => {
+  //     try {
+  //       const { data: customerData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
+  //       setCustomerInfos(customerData[0]?.number?.toString());
 
-  useEffect(() => {
-    const getDataOrders = async () => {
-      try {
-        const { data: responseData } = await axios.get('http://localhost:3500/MyOrders');
-        setAlreadyOrdered(responseData.map((value) => value['0']));
-      } catch (err) {
-        console.error('Error fetching orders:', err);
-      }
-    };
-    getDataOrders();
-  }, []);
-
-  useEffect(() => {
-    const getAddressVerify = async () => {
-      try {
-        const { data: customerData } = await axios.get('http://localhost:3500/CustomerInfo');
-        setCustomerInfos(customerData[0]?.number?.toString());
-
-        const { data: userData } = await axios.get('http://localhost:3500/CreateUserData');
-        setCreateUserDatas(userData[0]?.number);
-      } catch (err) {
-        console.error('Error verifying address:', err);
-        setCreateUserDatas(undefined);
-      }
-    };
-    getAddressVerify();
-  }, []);
+  //       const { data: userData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
+  //       setCreateUserDatas(userData[0]?.number);
+  //     } catch (err) {
+  //       console.error('Error verifying address:', err);
+  //       setCreateUserDatas(undefined);
+  //     }
+  //   };
+  //   getAddressVerify();
+  // }, []);
 
   const Increment = () => setProdCount((prev) => prev + 1);
   const Decrement = () => setProdCount((prev) => (prev > 1 ? prev - 1 : prev));
 
   const AddtoMyOrders = async () => {
-    if (!AlreadyOrdered.some((order) => order.id === data.id)) {
-      if (sizes) {
-        const updatedData = { ...data, size: sizes, Item: Count };
-        const orderData = [updatedData];
-        try {
-          setLoader(true);
-          await axios.post('http://localhost:3500/MyOrders', orderData, {
-            headers: { 'Content-Type': 'application/json' },
-          });
-          setSizeErr('');
-          if (CustomerInfos && CreateUserDatas && CustomerInfos === CreateUserDatas) {
-            setTimeout(() => {
-              setLoader(false);
-              navigate('/MyOrders');
-            }, 3000);
-          } else {
-            navigate('/CustomerInfos');
-          }
-        } catch (err) {
-          console.error('Error placing order:', err);
-          setLoader(false);
-        }
-      } else {
-        setSizeErr('Select Your size.');
-      }
-    } else {
-      toast.warning('The product is already ordered!');
-    }
-  };
+    toast.success('Order placed successfully!')
+  //   if (!AlreadyOrdered.some((order) => order.id === data.id)) {
+  //     if (sizes) {
+  //       const updatedData = { ...data, size: sizes, Item: Count };
+  //       const orderData = [updatedData];
+    //     try {
+    //       setLoader(true);
+    //       await axios.post('https://fast-silver-cow.glitch.me/First.json', {
+    //         Carts: [...AlreadyOrdered, ...orderData],
+    //       }, {
+    //         headers: { 'Content-Type': 'application/json' },
+    //       });
+    //       setSizeErr('');
+    //       if (CustomerInfos && CreateUserDatas && CustomerInfos === CreateUserDatas) {
+    //         setTimeout(() => {
+    //           setLoader(false);
+    //           navigate('/MyOrders');
+    //         }, 3000);
+    //       } else {
+    //         navigate('/CustomerInfos');
+    //       }
+    //     } catch (err) {
+    //       console.error('Error placing order:', err);
+    //       setLoader(false);
+    //     }
+    //   } else {
+    //     setSizeErr('Select Your size.');
+    //   }
+    // } else {
+    //   toast.warning('The product is already ordered!');
+    // }
+  // };
+  }
 
   return (
     <div className="container-fluid bg-dark text-white">

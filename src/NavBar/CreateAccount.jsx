@@ -25,15 +25,15 @@ const CreateAccount = () => {
       }),
       onSubmit:(data)=> {
         toast.success('Account created sccessfully!',{position :'top-center',autoClose:2000})
-        try{
-            axios.post('http://localhost:3500/CreateUserData',data,{
-              header:{
-                "Content-Type":"application/json"
-              }
-            })
-        }catch(err){
-          console.log(err)
-        };
+        // try{
+        //     axios.post('http://localhost:3500/CreateUserData',data,{
+        //       header:{
+        //         "Content-Type":"application/json"
+        //       }
+        //     })
+        // }catch(err){
+        //   console.log(err)
+        // };
           setTimeout(()=>{
           navigate('/')
         },2000)
