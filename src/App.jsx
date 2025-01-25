@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,8 +22,7 @@ const App = () => {
     const fetchCartData = async () => {
       try {
         const response = await axios.get('https://fast-silver-cow.glitch.me/First.json');
-        setIsCart(response.data.Carts || []); 
-        // console.log(response) idhu vela seiyidhu
+        setIsCart(response.data.Carts); 
       } catch (err) {
         console.error('Error fetching cart data:', err);
       }
@@ -31,23 +30,15 @@ const App = () => {
     fetchCartData();
   }, []);
   const Navigating = async (product) => {
-    console.log(product)
     const isExist = IsCarts.some((prod) => prod.id === product.id);
     if (!isExist) {
-      setIsCart([...IsCarts, product]);
-      try {
-        const response = await axios.post('https://fast-silver-cow.glitch.me/First.json', {
-          Carts: IsCarts,
-        });
-        console.log(response.data);
-      } catch (err) {
-        console.error('Error adding product to cart:', err);
-      }
+      setIsCart([product,...IsCarts]);
+      toast.success('Product added into your Cart',{position:'top-center'});
     } else {
-      console.log('Product is already in the cart.');
+      toast.info('Product is already in the cart.',{position:'top-center'});
     }
+    
   };
-
   return (
     <>
       <ToastContainer theme="dark" />

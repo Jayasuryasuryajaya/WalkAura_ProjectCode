@@ -5,7 +5,7 @@ import Offer from '../Images/Offer.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
 
 const Navigation = ({ cart, GetFromChild, Price }) => {
   const [DisplayPopup, setDisplayPoup] = useState(false);
@@ -40,38 +40,13 @@ const Navigation = ({ cart, GetFromChild, Price }) => {
       }, 1500);
     }
   }, []);
-
-  // setTimeout(() => {
-  //   const DeleteDatas = async () => {
-  //     const api = [
-  //       'http://localhost:3500/Carts',
-  //       'http://localhost:3500/CustomerInfo',
-  //       'http://localhost:3500/MyOrders',
-  //       'http://localhost:3500/CreateUserData',
-  //     ];
-  //     try {
-  //       for (const endpoint of api) {
-  //         const { data } = await axios.get(endpoint);
-  //         if (data.length > 0) {
-  //           for (const item of data) {
-  //             await axios.delete(`${endpoint}/${item.id}`);
-  //           }
-  //         }
-  //       }
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   DeleteDatas();
-  // }, 5 * 60 * 1000);
-
   const RemovePoups = () => {
     setDisplayPoup(false);
   };
 
   return (
     <div>
-      <nav className="navbar bg-dark navbar-dark navbar-expand-xl sticky-top z-index-5">
+      <nav className="navbar bg-dark navbar-dark navbar-expand-lg sticky-top z-index-5">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img

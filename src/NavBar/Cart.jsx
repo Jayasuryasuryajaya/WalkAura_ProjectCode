@@ -2,37 +2,11 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../Interface/NavBar.jsx';
-
-import axios from 'axios';
 const Cart = ({cart}) => {
   const navigate = useNavigate()
   const [CartData,setCartData]=useState([])
   const [ItemCount, setItemCount] = useState(1)
   const [selectedSize, setSelectedSize] = useState(CartData.map(() => null));
-
- useEffect(()=>{
-  const GetCartDatas=async()=>{
-    try{
-          const request= await axios.get('https://fast-silver-cow.glitch.me/First.json')
-          const res=await request.data.Carts
-          setCartData(res)
-          console.log(res)
-
-    }catch(err){
-      console.log(err)
-    }
-  }
-  GetCartDatas()
- },[])
-  const RemoveItems =async (cart) => {
-        try{
-            await axios.delete(`http://localhost:3500/Carts/${cart}`)
-            const filters=CartData.filter((item)=>item.id!==cart)
-            setCartData(filters)
-        }catch(err){
-          console.log(err)
-        }
-  }
   function Increment() {
     setItemCount(ItemCount + 1)
   }

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import NavBar from './NavBar.jsx';
 
@@ -9,84 +8,32 @@ const BuyPage = ({ cart }) => {
   const [Selected, setSelected] = useState('');
   const [SizeErr, setSizeErr] = useState('');
   const [Loader, setLoader] = useState(false);
-  const [AlreadyOrdered, setAlreadyOrdered] = useState([]);
-  const [CustomerInfos, setCustomerInfos] = useState('');
-  const [CreateUserDatas, setCreateUserDatas] = useState('');
   const { cartDatas, selectedSize, product } = location.state || {};
   const [prodCount, setProdCount] = useState(1);
   const data = cartDatas || product;
   const sizes = selectedSize || Selected;
   const Count = prodCount;
-  const navigate = useNavigate();
-  // useEffect(() => {
-  //   const getDataOrders = async () => {
-  //     try {
-  //       const { data: responseData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
-  //       setAlreadyOrdered(responseData.Carts || []);
-  //     } catch (err) {
-  //       console.error('Error fetching orders:', err);
-  //     }
-  //   };
-  //   getDataOrders();
-  // }, []);
-  // useEffect(() => {
-  //   const getAddressVerify = async () => {
-  //     try {
-  //       const { data: customerData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
-  //       setCustomerInfos(customerData[0]?.number?.toString());
-
-  //       const { data: userData } = await axios.get('https://fast-silver-cow.glitch.me/First.json');
-  //       setCreateUserDatas(userData[0]?.number);
-  //     } catch (err) {
-  //       console.error('Error verifying address:', err);
-  //       setCreateUserDatas(undefined);
-  //     }
-  //   };
-  //   getAddressVerify();
-  // }, []);
-
   const Increment = () => setProdCount((prev) => prev + 1);
   const Decrement = () => setProdCount((prev) => (prev > 1 ? prev - 1 : prev));
 
   const AddtoMyOrders = async () => {
-    toast.success('Order placed successfully!')
-  //   if (!AlreadyOrdered.some((order) => order.id === data.id)) {
-  //     if (sizes) {
-  //       const updatedData = { ...data, size: sizes, Item: Count };
-  //       const orderData = [updatedData];
-    //     try {
-    //       setLoader(true);
-    //       await axios.post('https://fast-silver-cow.glitch.me/First.json', {
-    //         Carts: [...AlreadyOrdered, ...orderData],
-    //       }, {
-    //         headers: { 'Content-Type': 'application/json' },
-    //       });
-    //       setSizeErr('');
-    //       if (CustomerInfos && CreateUserDatas && CustomerInfos === CreateUserDatas) {
-    //         setTimeout(() => {
-    //           setLoader(false);
-    //           navigate('/MyOrders');
-    //         }, 3000);
-    //       } else {
-    //         navigate('/CustomerInfos');
-    //       }
-    //     } catch (err) {
-    //       console.error('Error placing order:', err);
-    //       setLoader(false);
-    //     }
-    //   } else {
-    //     setSizeErr('Select Your size.');
-    //   }
-    // } else {
-    //   toast.warning('The product is already ordered!');
-    // }
-  // };
-  }
+    if (!Selected && !selectedSize) {
+      setSizeErr('Please select a size before proceeding.');
+      return;
+    }
+    setSizeErr('');
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+      toast.success('Order placed successfully!', { position: 'top-center' });
+    }, 2000);
+  };
 
   return (
-    <div className="container-fluid bg-dark text-white">
+    <div className="container-fluid bg-dark text-white p-0">
       <NavBar cart={cart} />
       <div className="row d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+      
         {Loader && (
           <div
             className="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
@@ -98,17 +45,25 @@ const BuyPage = ({ cart }) => {
             </div>
           </div>
         )}
+       
         {data && (
-          <div className="card shadow-lg bg-light text-dark p-3" style={{ width: '70%' }}>
-            <h4 className="text-start fs-4">Order Confirmation</h4>
+          <div className="card shadow-lg bg-light text-dark p-4 col-11 col-md-8 col-lg-6">
+            <h4 className="text-start fs-4 mb-4">Order Confirmation</h4>
             <div className="row g-4">
+              
               <div className="col-lg-6 col-md-6 col-sm-12 text-center">
-                <img src={data.images} alt="Product" width='300' height='400' className="img-fluid rounded" />
+                <img
+                  src={data.images}
+                  alt="Product"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: '400px', objectFit: 'contain' }}
+                />
               </div>
+              
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <p><strong>Name:</strong> {data.name}</p>
                 <p><strong>Brand:</strong> {data.brand}</p>
-                <p><strong>Total Price:</strong> {data.price}</p>
+                <p><strong>Price:</strong> {data.price}</p>
                 <p>
                   <strong>Size:</strong>
                   {selectedSize ? (
@@ -117,7 +72,7 @@ const BuyPage = ({ cart }) => {
                     data.size.map((size, index) => (
                       <button
                         key={index}
-                        className={`btn btn-outline-dark ms-1 ${size === Selected ? 'bg-dark text-white' : ''}`}
+                        className={`btn btn-outline-dark ms-1 mb-2 ${size === Selected ? 'bg-dark text-white' : ''}`}
                         onClick={() => setSelected(size)}
                       >
                         {size}
@@ -125,19 +80,21 @@ const BuyPage = ({ cart }) => {
                     ))
                   )}
                 </p>
-                <span className="text-danger">{SizeErr}</span>
+                {SizeErr && <span className="text-danger d-block mb-2">{SizeErr}</span>}
                 <div className="d-flex align-items-center mt-2">
                   <p>
                     <strong>Product Count:</strong>
                     <button className="btn btn-outline-dark ms-3" onClick={Decrement}>-</button>
-                    <span className="ms-2 me-2">{Count}</span>
+                    <span className="mx-2">{Count}</span>
                     <button className="btn btn-outline-dark" onClick={Increment}>+</button>
                   </p>
                 </div>
                 <p><strong>Ratings:</strong> {data.ratings} <i className="bi bi-star-fill" /></p>
                 <p><strong>Description:</strong> {data.description}</p>
                 <div className="text-center">
-                  <button className="btn btn-dark mb-3" onClick={AddtoMyOrders}>Continue Order</button>
+                  <button className="btn btn-dark w-100" onClick={AddtoMyOrders}>
+                    Continue Order
+                  </button>
                 </div>
               </div>
             </div>

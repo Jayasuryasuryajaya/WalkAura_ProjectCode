@@ -1,38 +1,9 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../Interface/InterfaceCSS/MyOrder.css';
 import NavBar from '../Interface/NavBar.jsx'
 const MyOrders = ({cart}) => {
   const [Orders, setOrders] = useState([]);
   const [HandleCancle, setHandleCancel] = useState([]);
-
-  // useEffect(() => {
-  //   const GetMyOrders = async () => {
-  //     try {
-  //       const MyOrders = await axios.get('http://localhost:3500/MyOrders');
-  //       setOrders(MyOrders.data);
-  //       setHandleCancel(MyOrders.data.map(() => true));
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   GetMyOrders();
-  // }, []);
-
-  // const CalcelOrder = (id) => {
-  //   try{
-  //     axios.delete(`http://localhost:3500/MyOrders/${id}`)
-  //     const getFilterData=Orders.filter((curr)=>{curr.id !== id})
-  //     setHandleCancel((prevState) =>
-  //       prevState.map((_,i) => ( Orders[i].id !== id)))
-  //     Orders(getFilterData)
-  //   }catch(err){
-  //     console.log(err)
-  //   }
-  //   console.log(HandleCancle)
-   
-  // };
-
   return (
     <>
       <NavBar cart={cart}/>

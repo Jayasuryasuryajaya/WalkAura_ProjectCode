@@ -1,0 +1,33 @@
+
+@media (max-width: 500px) {
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .mobileviews .card img {
+      margin-bottom: 1rem;
+      width: 100%; 
+      height: 300px;
+      max-width: 250px; 
+      padding:20px;
+      display: flex;
+      justify-content: center;
+    }
+    .tagueh{
+        display: flex;
+        justify-content: center;
+    }
+    .contents{
+           text-align: justify;
+    }
+  .buttonuh{
+    justify-content: center;
+  }
+    .mobileviews .card .ms-4 {
+      margin-left: 0;
+    }
+  }
+  
