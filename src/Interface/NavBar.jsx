@@ -46,7 +46,7 @@ const Navigation = ({ cart, GetFromChild, Price }) => {
 
   return (
     <div>
-      <nav className="navbar bg-dark navbar-dark navbar-expand-lg sticky-top z-index-5">
+      <nav className="navbar bg-dark navbar-dark navbar-expand-md sticky-top z-index-5">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
